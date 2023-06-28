@@ -4,7 +4,6 @@ import java.util.StringTokenizer;
 
 public class Dice {
 	int[] dice;
-
 	public Dice() {
 		dice = new int[3];
 		dice[0] = (int) (Math.random() * 6);
@@ -12,7 +11,6 @@ public class Dice {
 		dice[2] = (int) (Math.random() * 6);
 		Arrays.sort(dice);
 	}
-
 	public int[] Choices() throws DiceException {
 		System.out.println("how would you like to move?");
 		while(true){
@@ -58,13 +56,9 @@ public class Dice {
 			System.out.println("choose again!");
 			
 		}
-		}
-		
-
+	    }
 	}
-	
 	public void ShowDices(){
 		System.out.println(dice[0]+", "+dice[1]+", "+dice[2]);
 	}
-
 }
